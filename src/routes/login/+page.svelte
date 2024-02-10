@@ -1,1 +1,64 @@
-<a href="/api/auth/login">Login</a>
+<script lang="ts">
+	import { Button } from '$components';
+	import logo from '$assets/Spotify_Logo_RGB_White.png';
+	import cover from '$assets/cover.png';
+</script>
+
+<!-- <a href="/api/auth/login">Login</a> -->
+<div class="wrapper">
+	<div class="content">
+		<img src={logo} class="logo" alt="Spotify Logo" />
+		<h1>EGP 0.00 for 3 months of Premium</h1>
+		<p>Enjoy ad-free music listening, offline playback, and more. Cancel anytime.</p>
+		<div class="buttons">
+			<Button
+				element="a"
+				variant="outline"
+				href="https://www.spotify.com/"
+				target="_blank"
+				rel="noopener noreferrer">注册</Button
+			>
+			<Button element="a" href="/api/auth/login">登录</Button>
+		</div>
+	</div>
+	<div class="cover">
+		<img src={cover} alt="Svelte Cover" />
+	</div>
+</div>
+
+<style lang="scss">
+	.wrapper {
+		display: flex;
+		width: 100%;
+		max-width: 1200px;
+	}
+	.content {
+		flex: 1.8;
+		.logo {
+			width: 170px;
+			max-width: 100%;
+			margin-bottom: 30px;
+		}
+		h1 {
+			font-size: functions.toRem(40);
+		}
+		p {
+			font-size: functions.toRem(20);
+		}
+		.buttons {
+			margin-top: 40px;
+			:global(.button) {
+				margin-right: 10px;
+				padding: 10px 20px;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	.cover {
+		flex: 1;
+		img {
+			max-width: 100%;
+		}
+	}
+</style>
