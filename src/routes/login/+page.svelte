@@ -4,7 +4,6 @@
 	import cover from '$assets/cover.png';
 </script>
 
-<!-- <a href="/api/auth/login">Login</a> -->
 <div class="wrapper">
 	<div class="content">
 		<img src={logo} class="logo" alt="Spotify Logo" />

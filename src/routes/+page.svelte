@@ -8,6 +8,7 @@
 	<option value="">Option</option>
 </select>
 <button>Click me</button>
+<div style="height: 1000px;"></div>
 
 <style lang="scss">
 	h1 {
