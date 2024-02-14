@@ -1,4 +1,3 @@
-<!-- 首页 / -->
 <h1>Welcome to SvelteKit</h1>
 <div>
 	<p>你好</p>
@@ -7,7 +6,7 @@
 <select>
 	<option value="">Option</option>
 </select>
-<button>Click me</button>
+<button>点击</button>
 <div style="height: 1000px;"></div>
 
 <style lang="scss">

@@ -2,11 +2,13 @@
     // "editor.formatOnSave": true,
     "editor.tabSize": 2,
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "always"
+        "source.fixAll": "explicit",
+        // "source.fixAll.stylelint": "explicit"
     },
     "cSpell.words": [
         "pkce",
         "lucide",
-        "topbar"
-    ]
+        "topbar",
+        "onwarn"
+    ],
 }

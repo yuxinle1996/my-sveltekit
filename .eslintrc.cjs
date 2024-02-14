@@ -9,6 +9,7 @@ module.exports = {
 	],
 	parser: '@typescript-eslint/parser',
 	plugins: ['@typescript-eslint'],
+	ignorePatterns: ['*.cjs'],
 	parserOptions: {
 		sourceType: 'module',
 		ecmaVersion: 2020,
@@ -35,6 +36,8 @@ module.exports = {
 		'object-curly-spacing': ['error', 'always'],
 		'array-bracket-spacing': ['error', 'never'],
 		'computed-property-spacing': ['error', 'never'],
-		'space-infix-ops': ['error', { 'int32Hint': false }]
+		'space-infix-ops': ['error', { 'int32Hint': false }],
+		'unicorn/consistent-destructuring': 0,
+		'no-empty': ['error', { allowEmptyCatch: true }],
 	}
 };

@@ -6,8 +6,11 @@
 		a: HTMLAnchorAttributes;
 	}
 	type $$Props = ButtonComponentElements[Element] & {
+		/** 按钮类型 */
 		element: Element;
+		/** 按钮样式 */
 		variant?: 'solid' | 'outline' | 'danger';
+		/** 扩展类名 */
 		className?: string;
 	};
 	export let element: Element;

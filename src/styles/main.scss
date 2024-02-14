@@ -1,9 +1,9 @@
 @use 'functions';
-@import "@fontsource/metropolis";
-@import "@fontsource/metropolis/300";
-@import "@fontsource/metropolis/500";
-@import "@fontsource/metropolis/600";
-@import "@fontsource/metropolis/700";
+@import '@fontsource/metropolis';
+@import '@fontsource/metropolis/300';
+@import '@fontsource/metropolis/500';
+@import '@fontsource/metropolis/600';
+@import '@fontsource/metropolis/700';
 
 :root {
 	--bg-color: #191414;
@@ -24,14 +24,14 @@
 }
 
 body {
-  font-family: "Metropolis", sans-serif;
-  background-color: var(--bg-color);
-  color: var(--text-color)
+	font-family: 'Metropolis', sans-serif;
+	background-color: var(--bg-color);
+	color: var(--text-color);
 }
 
 ::selection {
-  background-color: var(--accent-color);
-  color: var(--text-color);
+	background-color: var(--accent-color);
+	color: var(--text-color);
 }
 
 input {
@@ -89,8 +89,18 @@ select,
 input,
 button,
 a {
-  &:focus-visible {
-    outline: 2px solid var(--accent-color);
-    outline-offset: 2px;
-  }
+	&:focus-visible {
+		outline: 2px solid var(--accent-color);
+		outline-offset: 2px;
+	}
+}
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(100%);
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
 }
