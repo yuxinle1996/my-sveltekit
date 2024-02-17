@@ -9,6 +9,7 @@
         "pkce",
         "lucide",
         "topbar",
-        "onwarn"
+        "onwarn",
+        "nprogress"
     ],
 }

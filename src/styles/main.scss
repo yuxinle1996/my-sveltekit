@@ -4,6 +4,7 @@
 @import '@fontsource/metropolis/500';
 @import '@fontsource/metropolis/600';
 @import '@fontsource/metropolis/700';
+@import 'tippy-theme';
 
 :root {
 	--bg-color: #191414;
@@ -21,6 +22,25 @@
 	--header-height: 64px;
 	--error: #c24141;
 	--warning: #e7a917;
+}
+
+/* 滚动条*/
+html {
+	scrollbar-color: var(--accent-color) var(--bg-color);
+  scrollbar-width: thin;
+}
+/* 滚动条*/
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0 0);
 }
 
 body {
@@ -95,7 +115,8 @@ a {
 	}
 }
 
-.visually-hidden {
+.visually-hidden,
+.skip-link:not(:focus) {
 	clip: rect(0 0 0 0);
 	clip-path: inset(100%);
 	width: 1px;
@@ -103,4 +124,20 @@ a {
 	overflow: hidden;
 	position: absolute;
 	white-space: nowrap;
+}
+
+.skip-link:focus {
+	position: absolute;
+	z-index: 200;
+	background-color: var(--accent-color);
+	color: #fff;
+	padding: 10px;
+	top: 10px;
+	left: 10px;
+	outline: 2px solid;
+	font-weight: 500;
+}
+
+#nprogress .bar {
+	background: var(--accent-color) !important;
 }

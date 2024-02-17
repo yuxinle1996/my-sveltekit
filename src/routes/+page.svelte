@@ -8,6 +8,7 @@
 </select>
 <button>点击</button>
 <div style="height: 1000px;"></div>
+<div id="haha" style="height: 1000px;">哈哈哈</div>
 
 <style lang="scss">
 	h1 {

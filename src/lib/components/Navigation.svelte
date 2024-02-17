@@ -168,6 +168,13 @@
 			height: 100vh;
 			overflow: auto;
 			display: none;
+			// compile into ===> html.no-js .nav-content .nav-content-inner
+			:global(html.no-js) & {
+				@include breakpoint.down('md') {
+					display: block;
+					height: auto;
+				}
+			}
 			ul {
 				padding: 0;
 				margin: 20px 0 0;
