@@ -11,6 +11,10 @@ declare global {
 		// interface PageState {}
 		// interface Platform {}
 	}
+
+	declare interface Window {
+		refreshPromise: Promise<Response> | null;
+	}
 }
 
 export {};

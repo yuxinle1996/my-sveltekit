@@ -39,5 +39,6 @@ module.exports = {
 		'space-infix-ops': ['error', { 'int32Hint': false }],
 		'unicorn/consistent-destructuring': 0,
 		'no-empty': ['error', { allowEmptyCatch: true }],
+		"no-unused-vars": 1,
 	}
 };

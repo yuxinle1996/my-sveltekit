@@ -1,6 +1,6 @@
 import type { LayoutServerLoad } from './$types';
 import { SPOTIFY_BASE_URL } from '$env/static/private';
-import { error, redirect } from '@sveltejs/kit';
+import { redirect } from '@sveltejs/kit';
 
 // 每次请求时调用，用于加载用户信息 以及token过期时的刷新
 export const load: LayoutServerLoad = async ({ cookies, fetch, url }) => {
